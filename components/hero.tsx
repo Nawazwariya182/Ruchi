@@ -29,7 +29,7 @@ export function Hero() {
             </div>
           )}
           <Spline 
-            scene="https://prod.spline.design/kD4uSU-wRdaA39bF/scene.splinecode"
+            scene="https://prod.spline.design/eivWGU6dbQFlJqPM/scene.splinecode"
             style={{ background: 'transparent' }}
             onLoad={() => setSplineLoaded(true)}
           />
