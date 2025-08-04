@@ -120,16 +120,39 @@
     user-select: none;
   }
 
-  body {
-    @apply bg-background text-foreground;
-    /* font-family: 'Poppins', sans-serif; */
-    cursor: none;
+  html {
+    font-family: 'Geist Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: auto !important;
   }
 
-  html {
-  font-family: 'Geist Sans', system-ui, -apple-system, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+    cursor: none;
+    overflow-x: hidden;
+  }
+
+  /* Lenis smooth scrolling optimization */
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
   }
 }
+
 /* Custom inverse cursor */
 .custom-cursor {
   width: 35px;
@@ -199,4 +222,9 @@ a:hover~.custom-cursor,
 }
 .scrollbar-hide::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
+}
+
+/* Smooth scroll optimization */
+* {
+  scroll-behavior: auto !important;
 }

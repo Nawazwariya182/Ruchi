@@ -22,6 +22,40 @@ export default function HomePage() {
     return () => clearTimeout(timer)
   }, [])
 
+  useEffect(() => {
+    let lenis: any;
+
+    const initLenis = async () => {
+      const Lenis = (await import('lenis')).default;
+      
+      lenis = new Lenis({
+        duration: 1.2,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        touchMultiplier: 2,
+        infinite: false,
+      });
+
+      function raf(time: number) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    };
+
+    if (!showSplash) {
+      initLenis();
+    }
+
+    return () => {
+      if (lenis) {
+        lenis.destroy();
+      }
+    };
+  }, [showSplash]);
+
   if (showSplash) {
     return <SplashScreen />
   }
@@ -37,22 +71,9 @@ export default function HomePage() {
         curveAmount={150}
         direction="left"
         interactive={false} />
-      {/* <MagicBento
-        textAutoHide={true}
-        enableStars={true}
-        enableSpotlight={true}
-        enableBorderGlow={true}
-        enableTilt={true}
-        enableMagnetism={true}
-        clickEffect={true}
-        spotlightRadius={300}
-        particleCount={12}
-        glowColor="132, 0, 255"
-        /> */}
       <Features />
       <LocationSection />
       <Products />
-      {/* <CTA /> */}
       <Footer />
     </div>
   )
