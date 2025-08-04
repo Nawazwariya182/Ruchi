@@ -27,7 +27,7 @@ export function LocationSection() {
       <div className="container mx-auto px-6">
       <div className="text-center mb-16">
         <h2 className="text-5xl font-light mb-6 tracking-tight">
-        Visit Our <span className="font-normal">Experience Center</span>
+        Visit Our <span className="font-normal">Store</span>
         </h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
         Discover our store
@@ -70,7 +70,7 @@ export function LocationSection() {
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="h-5 w-5 text-gray-500" />
-              <span className="text-gray-700">(555) 123-STRIDE</span>
+              <span className="text-gray-700">+91-9029872387</span>
             </div>
             </div>
 
