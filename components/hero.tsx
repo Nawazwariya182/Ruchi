@@ -35,14 +35,14 @@ export function Hero() {
           <div className="text-center space-y-10">
             {/* Premium Text */}
             <div className="absolute top-2 left-4 pointer-events-none">
-              <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-bold text-white tracking-[0.1em] md:tracking-[0.1em] uppercase z-10" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '2px black' : 'none', color: window.innerWidth >= 768 ? 'white' : 'black' }}>
+              <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-bold text-black lg:text-white xl:text-white md:text-white tracking-[0.1em] md:tracking-[0.1em] uppercase z-10" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '2px black' : 'none' }}>
                 Premium
               </h1>
             </div>
 
             {/* Footwear Text */}
             <div className="absolute bottom-[140px] left-1/2 transform -translate-x-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 md:left-auto md:transform-none md:right-1 lg:bottom-[120px] lg:right-1 xl:bottom-[120px] xl:right-5 pointer-events-none z-1">
-              <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '1px black' : 'none',color: window.innerWidth >= 768 ? 'white' : 'black' }}>
+              <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white lg:text-white xl:text-white md:text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '1px black' : 'none' }}>
                 Footwear
               </h2>
               <div className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-px bg-black/40 mx-auto mt-2 sm:mt-3 md:mt-4 lg:mt-6 xl:mt-8"></div>
