@@ -11,11 +11,11 @@ export function Header() {
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo on left */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-black rounded-full border border-gray-100 flex items-center justify-center">
               <Image
                 src="/logo.svg"
                 alt="Logo"
-                className="object-contain rounded-full"
+                className="object-contain rounded-full border border-gray-300"
                 width={192}
                 height={192}
               />
