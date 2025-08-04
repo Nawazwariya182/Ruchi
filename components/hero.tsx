@@ -42,12 +42,12 @@ export function Hero() {
 
             {/* Footwear Text */}
             <div className="absolute bottom-[140px] left-1/2 transform -translate-x-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 md:left-auto md:transform-none md:right-1 lg:bottom-[120px] lg:right-1 xl:bottom-[120px] xl:right-5 pointer-events-none z-1">
-              <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white lg:text-white xl:text-white md:text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '1px black' : 'none' }}>
+              <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-black lg:text-white xl:text-white md:text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '1px black' : 'none' }}>
                 Footwear
               </h2>
-              <div className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-px bg-black/40 mx-auto mt-2 sm:mt-3 md:mt-4 lg:mt-6 xl:mt-8"></div>
+              <div className="w-24 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-px bg-black/40 mx-auto mt-2 sm:mt-3 md:mt-4 lg:mt-6 xl:mt-8"></div>
               <p className="flex text-xl
-               justify-center sm:text-lg md:text-lg lg:text-lg xl:text-xl text-white tracking-[0.05em] md:tracking-[0.1em] font-medium max-w-sm sm:max-w-sm md:max-w-md lg:max-w-md mx-auto px-2 sm:px-3 md:px-4 z-10" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '0.6px black' : 'none' }}>
+               justify-center sm:text-lg md:text-lg lg:text-lg xl:text-xl text-black lg:text-white xl:text-white md:text-white tracking-[0.05em] md:tracking-[0.1em] font-medium max-w-sm sm:max-w-sm md:max-w-md lg:max-w-md mx-auto px-2 sm:px-3 md:px-4 z-10" style={{ WebkitTextStroke: window.innerWidth >= 768 ? '0.6px black' : 'none' }}>
                 Excellence in every step—no compromises.
               </p>
             </div>
