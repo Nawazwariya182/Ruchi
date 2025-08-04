@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { CustomCursor } from "@/components/custom-cursor"
 import { SplashScreen } from "@/components/splash-screen"
 import { Header } from "@/components/header"
@@ -10,6 +11,8 @@ import { Products } from "@/components/products"
 import { LocationSection } from "@/components/location-section"
 import { Footer } from "@/components/footer"
 import CurvedLoop from "@/components/CurvedLoop"
+import { CreativeCommons } from "lucide-react"
+// import { CreditsSection } from "./credit/page"
 
 export default function HomePage() {
   const [showSplash, setShowSplash] = useState(true)
@@ -75,6 +78,15 @@ export default function HomePage() {
       <LocationSection />
       <Products />
       <Footer />
+      
+      {/* Fixed Credits Button */}
+      <Link
+        href="./credit/"
+        className="fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-colors z-50"
+        aria-label="Open Credits"
+      >
+        <CreativeCommons className="w-6 h-6" />
+      </Link>
     </div>
   )
 }
