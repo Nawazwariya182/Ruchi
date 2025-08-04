@@ -7,7 +7,7 @@ import Link from "next/link"
 export function Header() {
   return (
     <>
-      <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 z-100">
+      <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 z-200">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo on left */}
           <div className="flex items-center space-x-3">
