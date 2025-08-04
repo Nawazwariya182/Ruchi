@@ -34,16 +34,8 @@ export function Hero() {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-40 lg:z-40 xl:z-10 md:z-40 sm:z-40">
           <div className="text-center space-y-10">
             {/* Premium Text */}
-            <div className="absolute top-2 left-4 pointer-events-none transform-gpu">
-              <h1 
-                className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-black text-white tracking-[0.1em] md:tracking-[0.1em] uppercase" 
-                style={{ 
-                  WebkitTextStroke: '2px black',
-                  contain: 'layout style paint',
-                  minHeight: '80px',
-                  width: 'fit-content'
-                }}
-              >
+            <div className="absolute top-2 left-4 pointer-events-none">
+              <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-black text-white tracking-[0.1em] md:tracking-[0.1em] uppercase z-10" style={{ WebkitTextStroke: '2px black' }}>
                 Premium
               </h1>
             </div>
