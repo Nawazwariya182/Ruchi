@@ -227,3 +227,37 @@ a:hover~.custom-cursor,
 * {
   scroll-behavior: auto !important;
 }
+
+/* Lenis + mobile / touch enhancements */
+html.lenis,
+html.lenis body {
+  height: auto; /* ensure Lenis doesn't lock height on mobile */
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important; /* prevent conflicts */
+  touch-action: pan-y; /* allow vertical panning */
+}
+
+html.is-touch {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+}
+
+html.is-touch body {
+  cursor: auto; /* restore default (cursor: none set globally) */
+}
+
+html.is-touch .custom-cursor {
+  display: none !important; /* hide fake cursor on touch devices */
+}
+
+/* Optional: prevent accidental text selection lag on touch */
+html.is-touch * {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Slightly reduce wheel/touch jank if any nested scroll areas appear */
+[data-lenis-prevent] {
+  overscroll-behavior: contain;
+}

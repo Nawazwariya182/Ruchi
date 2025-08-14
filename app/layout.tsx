@@ -18,8 +18,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scrollbar-hide lenis">
+    <html lang="en" className="scrollbar-hide">
       <head>
+        {/* Early touch / coarse pointer flag so mobile CSS applies before hydration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var h=document.documentElement;if(window.matchMedia('(pointer:coarse)').matches){h.classList.add('is-touch');}}catch(e){}})();`,
+          }}
+        />
       </head>
       <body className="scrollbar-hide">{children}</body>
     </html>
